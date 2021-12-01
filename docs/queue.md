@@ -72,3 +72,5 @@ Create an instance of this class called ``grapes_of_wrath`` and add holds for Ja
 ## Queue Performance
 
 When it comes to queues in Python, the data structure is fairly well-optimized. In other languages, removing an item from the first index of an array would then require iterating through said array to move the rest of the items to their new place in the queue. Python's lists are more versatile in that they don't requre the iteration after removing the first index, which gives them a performance of O(1) to enqueue and dequeue a value from the list, wheras other languages would require 0(n) to dequeue a value (though still only 0(1) to enqueue).
+
+### [<-- Back](../README.md)

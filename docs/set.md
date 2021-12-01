@@ -38,3 +38,5 @@ print(exampleSet)
 Python comes equipped with the ``hash()`` function for quickly generating a has based on whatever input it is given, though not every data type is hashable by this function. Since the hash is numeric, you can compress the size of your set by using ``index(number) = hash(n) % 10`` to generate a smaller set of data to work with.
 
 Using this information, create a set data structure that can store up to 16 random values between 1 and 128.
+
+### [<-- Back](../README.md)
