@@ -39,4 +39,6 @@ Python comes equipped with the ``hash()`` function for quickly generating a has 
 
 Using this information, create a set data structure that can store up to 16 random values between 1 and 128.
 
+The solution to this challenge is available [here](/res/hasher.py).
+
 ### [<-- Back](../README.md)
