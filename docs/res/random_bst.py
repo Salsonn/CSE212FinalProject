@@ -1,3 +1,5 @@
+import random
+
 class BST:
 
     class Node:
@@ -34,3 +36,13 @@ class BST:
                 # Need to keep looking.  Call _insert
                 # recursively on the right sub-tree.
                 self._insert(data, node.right)
+
+# Generate a list of random numbers
+intList = []
+for i in range(500): intList.append(random.randint(1, 1024))
+
+# Create a new BST
+randomIntTree = BST()
+
+# Iterate through the list of random numbers and insert them into the tree in a balanced way.
+for value in intList: randomIntTree.insert(value)
