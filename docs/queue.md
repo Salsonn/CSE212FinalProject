@@ -46,12 +46,13 @@ print(dequeue(queue)) # Removes '1' from queue and prints the value.
 
 ## Example
 
-The following example code shows a simple queue structure within a Python class, which includes enqueueing and dequeuing function.
+The following example code shows a simple queue structure within a Python class, which includes enqueueing and dequeuing function. The Queue class is then used to store a product waitlist for an online store.
 
 ```python
 class Queue:
-    def __init__(self):
-        self.queue = []
+    def __init__(self, name):
+        self.queue = [] # The queue is stored in this variable.
+        self.name = name
 
     def enqueue(self, addition)
     # This function adds the contents of 'addition' to the class
@@ -61,6 +62,23 @@ class Queue:
     def dequeue(self):
         # This function removes and returns the next item in the queue.
         return self.queue.pop(self.queue[0])
+
+# Initialize the queue
+product_wait_list = Queue("RTX 3080 TI")
+
+# Add online accounts to the queue
+product_wait_list.enqueue("jeffryatten@gmail.com")
+product_wait_list.enqueue("misterpig253@yahoo.com")
+product_wait_list.enqueue("john.jacob.js@gmail.com")
+product_wait_list.enqueue("batman.nightwing27@hotmail.com")
+
+print(f"There are {len(product_wait_list.queue)} people currently in the queue.")
+
+# Two products become available and were bought. Lets remove the buyers from the queue.
+product_wait_list.dequeue()
+product_wait_list.dequeue()
+
+print(f"There are {len(product_wait_list.queue)} people currently in the queue.")
 ```
 
 ## Problem to Solve
