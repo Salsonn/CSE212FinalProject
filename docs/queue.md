@@ -6,6 +6,13 @@ Queues can be found all around our lives. From the line in the grocery store, to
 
 Queues are a data structure that holds data in a one-dimensional format (that being a line). The most important, and identifiable, characteristic of a queue is it's **first in, first out** ordering system. This means that in a queue, data is added by appending it to the end of the data set, and data is removed or read starting at the first index in the structure.
 
+## Common Queue Methods
+
+* ``enqueue()`` Adds a specified value into the queue.
+* ``dequeue()`` Removes the value found in the front of the queue.
+* ``size()`` Returns an integer reporting how many items are in the queue.
+* ``empty()`` Returns true if ``size()`` is equal to zero.
+
 ## Enqueuing Data
 
 In the case of Python, queues can be easily made using a simple list. Data can be added with the built-in ``append()`` function.
