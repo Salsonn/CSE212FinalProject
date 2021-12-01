@@ -18,9 +18,16 @@ When using open addressing, duplicate hashes are stored in any adjacent availabl
 
 Another technique to handle duplicate hashes is chaining. In this technique, whenever a conflict occures, the data at that given address is moved into a new, chained list along with its conflict, and that list is then linked to in the original set structure. This is also slower, as the second list must be iterated through per item, but it is less likely to have serious issues when handling conflicts.
 
+## Common Set Methods
+
+* ``add()`` Adds the specified value to the set.
+* ``remove()`` Removes the specified value from the set.
+* ``member()`` Returns True if the specified value is found within a set.
+* ``size()`` Returns an integer reflecting the number of data points in the set.
+
 ## Example
 
-In Python, we can easily create set structures using the dict data type, which can be indicated by ``{}`` brackets. Data within dicts can be manipulated in simple ways with the ``add()`` and ``remove()`` functions.
+In Python, we can easily create set structures using the dict data type, which are indicated by ``{}`` brackets. Data within dicts can be manipulated in simple ways with the ``add()`` and ``remove()`` functions.
 
 ```python
 exampleSet = {1, 2, 3, 4, 5, 6}

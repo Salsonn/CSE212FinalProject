@@ -6,6 +6,17 @@ Trees are green, and these data structures try to be as well, by keeping power c
 
 Tree nodes have several different subcategories. Most trees have two different types of nodes, parent nodes, which they connect from, and child nodes, which they connect to. Trees will only have one parent node, and binary trees are called such because they contain only two child nodes. Other node types are the root node, which is at the top of the tree and as such has no parent node, and the leaf node, which is found at the bottom of a tree and has no child nodes.
 
+## Common Tree Methods
+
+* ``insert()`` Adds a specified value to the tree.
+* ``remove()`` Finds and removes a specified value from the tree.
+* ``contains()`` Searches the tree and returns ``True`` if the specified value is found.
+* ``traverse_forward()`` Recursively moves through the tree from least to greatest values.
+* ``traverse_reverse()`` Recursively moves through the tree from greatest to least values.
+* ``height()`` Returns the number of node layers in the tree.
+* ``size()`` Returns the sum total of values stored in the tree.
+* ``empty()`` Returns ``True`` if there are no values stored in the tree.
+
 ## Binary Search Trees
 
 Trees can have their data inserted at random but what's the point of that? In order to make a tree data structure more efficient, we use Binary Search Trees, which follow predefined rules for determining where to insert data.
