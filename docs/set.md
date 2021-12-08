@@ -27,7 +27,7 @@ Another technique to handle duplicate hashes is chaining. In this technique, whe
 
 ## Example
 
-In Python, we can easily create set structures using the dict data type, which are indicated by ``{}`` brackets. Data within dicts can be manipulated in simple ways with the ``add()`` and ``remove()`` functions.
+In Python, we can easily create set structures using the dict data type, which are indicated by ``{}`` brackets. Data within dicts can be manipulated in simple ways with the ``add()`` and ``remove()`` functions. Sets can hold a variety of data types, and we are using numbers here simply for readability.
 
 ```python
 exampleSet = {1, 2, 3, 4, 5, 6}

@@ -33,7 +33,7 @@ To mitigate this problem, a BST must be balanced. There are many, many different
 
 ## Example
 
-The following shows a simple BST class written in Python. Note that Nodes are a subclass of the BST class.
+The following shows a simple BST class written in Python. This BST makes use of recursion in its `_insert()` function to find a location for incoming data. Note that Nodes are a subclass of the BST class.
 
 ```python
 class BST:
