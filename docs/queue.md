@@ -68,7 +68,7 @@ class Queue:
 
     def dequeue(self):
         # This function removes and returns the next item in the queue.
-        return self.queue.pop(self.queue[0])
+        return self.queue.pop(0)
 
 # Initialize the queue
 product_wait_list = Queue("RTX 3080 TI")
